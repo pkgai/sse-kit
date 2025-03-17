@@ -1,0 +1,12 @@
+{
+  "name": "pkgai-sse-kit-playground",
+  "version": "0.4.4",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@pkgai/sse-parser": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.3"
+  }
+}

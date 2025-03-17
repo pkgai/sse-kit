@@ -1,0 +1,5 @@
+packages:
+  - lib
+  - playground
+onlyBuiltDependencies:
+  - '@parcel/watcher'

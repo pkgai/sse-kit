@@ -1,0 +1,5 @@
+{
+  "extends": "@vill-v/tsconfig/base.json",
+  "include": ["**/*.ts", "**/*.tsx", "**/*.vue"],
+  "exclude": ["node_modules"]
+}
