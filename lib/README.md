@@ -108,6 +108,17 @@ for await (const chunk of response(res)) {
 }
 ```
 
+## EventSourceStream
+
+将 `ReadableStream<Uint8Array>` 转换为 `ReadableStream<EventSourceMessage>`
+
+```ts
+import { EventSourceStream } from '@pkgai/sse-parser'
+
+const readableStream = getReadableStream()
+readableStream.pipeThrough(new EventSourceStream())
+```
+
 ## 贡献者
 <!-- automd:contributors author="Colourlessglow" license="MIT" github="pkgai/sse-kit" -->
 

@@ -1,5 +1,5 @@
 import { type AsyncIterableStream, asyncIterableStream } from '../helper'
-import { getLines, getMessages } from '../parse'
+import { EventSourceStream } from '../parse'
 import type { EventSourceMessage } from '../types'
 
 /**
@@ -10,18 +10,5 @@ import type { EventSourceMessage } from '../types'
 export function readableStreamToSSE(
   stream: ReadableStream<Uint8Array>
 ): AsyncIterableStream<EventSourceMessage> {
-  return asyncIterableStream(
-    stream.pipeThrough(
-      new TransformStream({
-        transform(chunk, controller) {
-          const lineDecode = getLines(
-            getMessages((message) => {
-              controller.enqueue(message)
-            })
-          )
-          lineDecode(chunk)
-        },
-      })
-    )
-  )
+  return asyncIterableStream(stream.pipeThrough(new EventSourceStream()))
 }
