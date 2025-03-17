@@ -9,7 +9,7 @@
     "url": "git+https://github.com/pkgai/sse-kit.git"
   },
   "scripts": {
-    "build": "turbo run build",
+    "build": "automd && turbo run build",
     "release": "vbumpp -r && pnpm build",
     "update:deps": "pnpm dlx taze major -r -w -i -f",
     "clean:deps": "pnpm dlx void-fs del **/node_modules node_modules",

@@ -1,5 +1,6 @@
+import type { AsyncIterableStream } from '../helper'
 import type { EventSourceMessage } from '../types'
-import { type AsyncIterableStream, readableStreamToSSE } from './readableStream'
+import { readableStreamToSSE } from './readableStream'
 
 /**
  * 转换 Response 为 可异步迭代的 sse 数据

@@ -38,3 +38,23 @@ for await (const chunk of response(res)) {
   console.log(chunk.event)
 }
 ```
+
+## 贡献者
+<!-- automd:contributors author="Colourlessglow" license="MIT" github="pkgai/sse-kit" -->
+
+Published under the [MIT](https://github.com/pkgai/sse-kit/blob/main/LICENSE) license.
+Made by [@Colourlessglow](https://github.com/Colourlessglow) and [community](https://github.com/pkgai/sse-kit/graphs/contributors) 💛
+<br><br>
+<a href="https://github.com/pkgai/sse-kit/graphs/contributors">
+<img src="https://contrib.rocks/image?repo=pkgai/sse-kit" />
+</a>
+
+<!-- /automd -->
+
+<!-- automd:with-automd -->
+
+---
+
+_🤖 auto updated with [automd](https://automd.unjs.io)_
+
+<!-- /automd -->
