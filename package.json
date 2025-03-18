@@ -26,7 +26,7 @@
     "jiti": "^2.4.2",
     "prettier": "^3.5.3",
     "publint": "^0.3.9",
-    "tsdown": "^0.6.8",
+    "tsdown": "^0.6.9",
     "turbo": "^2.4.4",
     "typescript": "^5.8.2",
     "unplugin-unused": "^0.4.3"

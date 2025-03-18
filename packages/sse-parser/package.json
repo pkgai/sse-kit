@@ -10,10 +10,10 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/pkgai/sse-kit.git",
-    "directory": "lib"
+    "directory": "packages/sse-parser"
   },
   "keywords": [
-    "source-event",
+    "event-source",
     "sse"
   ],
   "scripts": {
